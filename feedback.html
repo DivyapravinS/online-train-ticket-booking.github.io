@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>online train ticket booking|home</title>
+    <link rel="stylesheet" href="style.css">
+    
+      <script>
+function submitFeedback() {
+    var feedback = document.getElementById("feedback").value;
+    var rating = parseInt(document.getElementById("rating").value);
+
+    var output = document.getElementById("output");
+    if(name=="" && feedback=="")
+    {
+      window.alert("fill the form before submitting");
+
+    }
+
+    if (rating < 1 || rating > 5) {
+        window.alert("Please enter a valid rating between 1 and 5.");
+        return;
+    }
+
+    if (rating >= 4) {
+        output.innerHTML = "Thank you for your positive feedback: " + feedback;
+    } else {
+        output.innerHTML = "We're sorry to hear that. Your feedback: " + feedback;
+    }
+}
+</script>
+<style>
+    .container {
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 2rem;
+        background-color:rgb(116, 32, 32);
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      }
+      label {
+        display: block;
+        margin-bottom: 0.5rem;
+      }
+      input[type="text"], textarea, select {
+        width: 100%;
+        padding: 0.5rem;
+        margin-bottom: 1rem;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+      }
+      button {
+        background-color: #333;
+        color: white;
+        border: none;
+        padding: 0.5rem 1rem;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+      #output {
+        margin-top: 1rem;
+        padding: 0.5rem;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        background-color: #f0f0f0;
+      }
+    </style>
+    
+</head>
+<body>
+    <div class="nav">
+        <a href="home.html" ><img src="logo..png" alt="logo" style="display: inline;" height="27px;"></a>
+        <h1 id="up" style="color: blue;" style="font-family: Copperplate Gothic;">DPtracks</h1> 
+        <div id="ll">
+            <a   href="profile.html" style="color: black;" style="font-family: Copperplate Gothic;">PROFILE</a>
+            <a href="profile.html"><img src="profile.png" height="30"></a>
+        </div>
+    </div> 
+    <div id="help">
+        <a href="#" style="color: black"; style ="font-family: Copperplate Gothic;" style="display: inline;">help|</a>
+        <a href="#" style="color: black"; style ="font-family: Copperplate Gothic;" style="display: inline;">about us|</a>
+        <a href="#" style="color: black"; style ="font-family: Copperplate Gothic;"style="float: right;">sign out|</a>
+         <a href="RULES .html" style="color: black"; style ="font-family: Copperplate Gothic;"style="float: right;">Rules to be Followed</a>
+    </div>
+    <div id="search">
+        <br><br>
+        <center><h1 style="color: blue;" style="font-family: Copperplate Gothic;">TRAIN TICKET BOOKING</h1></center><br>
+        <marquee style="color: green">fastest confirmed booking exprience,  IRCTC authorised rartner,   instant refunds on UPI payments, hassle free customer care</marquee>
+        <br><br><br>
+    </div> 
+    <hr>
+   <center><strong><h1 style="text-decoration:underline;">
+        Feedback:
+</h1></strong><br></center>
+<br>
+<br>
+<div class="container">
+    <label for="name">Name:</label>
+    <input type="text" id="name" placeholder="Enter your name">
+    
+    <label for="email">Email:</label>
+    <input type="text" id="email" placeholder="Enter your email">
+    
+    <label for="feedback">Feedback:</label>
+    <textarea id="feedback" placeholder="Enter your feedback"></textarea>
+    
+    <label for="rating">Rating:</label>
+    <textarea id="rating" placeholder="Enter rating"></textarea>
+      
+    
+    <button onclick="submitFeedback()">Submit</button>
+    
+    <div id="output"></div>
+  </div>
+<h2 style="text-decoration:underline ;">Related feedbacks:</h2>
+<hr>
+<p style="text-shadow:0cqi;"><h3 style="color: blue;">RailMadad,</h3><br>
+    <img src="feedstar.png" height="100"><br> A Grievance Redressal Mechanism
+    Service Maturity Icon  Fully Online
+    Rail Madad Portal is to enable railway passengers to lodge a complaint or give suggestion through on line, app., or SMS and facility to track live status of complaints and provide feedback based on their satisfaction with the resolution. The portal is to enhance experience of Railways passengers with swift and satisfactory resolution of complaints.<
+    <hr>
+    <h3 style="color: blue;">Project Monitoring Group, Ministry of Railways</h3><br>
+        <img src="feedstar.png" height="100"><br> The Project Monitoring Group (PMG), Invest India is an institutional mechanism for the expedited resolution of issues and regulatory bottlenecks in projects with investments upward ₹ 500 Cr. in India.
+<hr>
+<h3 style="color: blue;">UNRESERVED MOBILE TICKETING SERVICES</h3><br>
+    <img src="feedstar.png" height="100"><br> Indian Railways offers the facility to purchase unreserved tickets through mobile phone at Delhi, Mumbai, Chennai, Kolkata and Secunderabad. Further Automatic Ticket Vending Machines dispensing unreserved tickets using smart cards are provided at over 1000 locations over CR (Central Railway), ER (Eastern Railway), ECoR (East Coast Railway), NR (Northern Railway), NER (North Eastern Railway), NWR (North Western Railway), SR (Southern Railway), SCR (South Central Railway), SER (South Eastern Railway), SECR (South East Central Railway), SWR (South Western Railway), WR (Western Railway) and WCR (West Central Railway).</p>
+    <a href="#up" > <img  id="up1" src="up.png" width="80"></a>
+    <br>
+    <br>
+    <footer>
+        <img src="facebook.png" height="14" >
+        <img src="instagram.png" height="14" style="display: inline;">
+        <img src="twitter.png" height="14" style="display: inline;">
+        <p>S.divya pravin &copy; 2023</p></footer>  
+</body>
+</html>    
+
+

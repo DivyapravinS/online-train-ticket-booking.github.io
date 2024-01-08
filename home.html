@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>online train ticket booking|home</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+    function checkAvailability() {
+      var source = document.getElementById("source").value;
+      var destination = document.getElementById("destination").value;
+      var date = document.getElementById("date").value;
+
+      var resultsDiv = document.getElementById("results");
+      resultsDiv.innerHTML = ""; // Clear previous results
+
+      if (source === "" || destination === "" || date === "") {
+        resultsDiv.textContent = "Please fill in all fields.";
+      } else if (source === destination) {
+        resultsDiv.textContent = "Source and destination cannot be the same.";
+      } else if (date < getCurrentDate()) {
+        resultsDiv.textContent = "Invalid date. Please select a future date.";
+      } else {
+        resultsDiv.textContent = "Tickets are available for your selected journey.";
+      }
+    }
+    function getCurrentDate() {
+      var today = new Date();
+      var day = today.getDate();
+      var month = today.getMonth() + 1; // January is 0
+      var year = today.getFullYear();
+
+      if (month < 10) {
+        month = "0" + month;
+      }
+      if (day < 10) {
+        day = "0" + day;
+      }
+
+      return `${year}-${month}-${day}`;
+    }
+      </script>
+</head>
+
+<body  >
+    <div class="nav">
+        <a href="home.html" ><img src="logo..png" alt="logo" style="display: inline;" height="27px;"></a>
+        <h1 id="up" style="color: blue;" style="font-family: Copperplate Gothic;">DPtracks</h1> 
+        <div id="ll">
+            <a   href="profile.html" style="color: black;" style="font-family: Copperplate Gothic;">PROFILE</a>
+            <a href="profile.html"><img src="profile.png" height="30"></a>
+        </div>
+    </div> 
+    <div id="help">
+        <a href="#" style="color: black"; style ="font-family: Copperplate Gothic;" style="display: inline;">help|</a>
+        <a href="#" style="color: black"; style ="font-family: Copperplate Gothic;" style="display: inline;">about us|</a>
+        <a href="#" style="color: black"; style ="font-family: Copperplate Gothic;"style="float: right;">sign out|</a>
+         <a href="RULES .html" style="color: black"; style ="font-family: Copperplate Gothic;"style="float: right;">Rules to be Followed</a>
+         <a href="feedback.html" style="display: inline;float: right; color: black;font-family: Copperplate Gothic;">feedback</a>
+    </div>
+    <div id="search" style="background-image: url(blurtrain.jpg);">
+        <br><br>
+        <center><h1 style="color: white;" style="font-family: Copperplate Gothic;">TRAIN TICKET BOOKING</h1></center><br>
+        <marquee style="color: yellow;">fastest confirmed booking exprience,  IRCTC authorised rartner,   instant refunds on UPI payments, hassle free customer care</marquee>
+        <br><br><br>
+        <center> <table style="font-family: Copperplate Gothic;">
+            <tr>
+                 <td><img id="from" src="tostation.png" height="80"></td>
+                <td><input id="source" type="text"  placeholder="from station"></td>
+            </tr>
+            <br>
+            <br>
+            <tr>
+                <td><img id="to" src="fromstation.png" height="80"></td>
+               <td><input id="destination" type="text" placeholder="to station"></td>
+           </tr>
+           <tr>
+            <td><img id="to" src="date.png" height="80"></td>
+            <td><input id="date" type="date" placeholder="tostation"></td>
+           </tr>
+        </table> 
+        <br>
+        <br>
+        <button onclick="checkAvailability()">Search</button>
+        <br>
+        <br> 
+        <div id="results"></div>
+        <div id="delay"></div>
+        <br><br>
+        <button id="button" onclick="window.location.href='search.html';">show train</button></center>
+        <br><br>
+        <div id="ii">
+            <p>-</p>
+        </div>
+</div>
+<b><h1 style="font-family: Copperplate Gothic;">Most  Booked  Train  Ticket   Routes</h1><br>
+    <hr>
+    <table id="tt1" style="font-family: Copperplate Gothic;">
+        <tr>
+            <td>MAS (chennai) to SBC (bangalore) <button style="background-color: pink;">search train</button></td>
+        </tr>
+        <tr>
+            <td>SBC (bangalore) to MAS(chennai) <button style="background-color: pink;">search train</button></td>
+        </tr><tr>
+            <td>CSMT (Mumbai) to PUNE(pune) <button style="background-color: pink;">search train</button></td>
+        </tr><tr>
+            <td>PUNE (PUNE) to CSMT(MUMBAI) <button style="background-color: pink;">search train</button></td>
+        </tr><tr>
+            <td>MAS (chennai) to CBE(COIMATORE) <button style="background-color: pink;">search train</button></td>
+        </tr><tr>
+            <td>MAS (chennai) to SBC (bangalore) <button style="background-color: pink;">search train</button></td>
+        </tr>
+
+    </table>
+    <table id="tt2" style="font-family: Copperplate Gothic;">
+        <tr >
+            <td>MAS (chennai) to SBC (bangalore) <button style="background-color: pink;">search train</button></td>
+        </tr>
+        <tr >
+            <td>SBC (bangalore) to MAS(chennai) <button style="background-color: pink;">search train</button></td>
+        </tr><tr >
+            <td>CSMT (Mumbai) to PUNE(pune) <button style="background-color: pink;">search train</button></td>
+        </tr><tr >
+            <td>PUNE (PUNE) to CSMT(MUMBAI) <button style="background-color: pink;">search train</button></td>
+        </tr><tr >
+            <td>MAS (chennai) to CBE(COIMATORE) <button style="background-color: pink;">search train</button></td>
+        </tr><tr >
+            <td>MAS (chennai) to SBC (bangalore) <button style="background-color: pink;">search train</button></td>
+        </tr>
+
+    </table>
+    <hr>
+    <h1 style="font-family: Copperplate Gothic;" >BOOK TRAIN TICKETS</h1>
+    <hr>
+    <p>Earlier, booking train tickets required you to physically visit ticket reservation centers and stand in long queues for hours on end. However, thanks to recent technological advancements, you can book train tickets online from the comfort of your own home. redRail by redBus is an online railway ticket booking platform that allows you to book tickets for your preferred trains in just a few minutes.
+
+        With the super-convenient and user-friendly interface of redRail, all you need to do is enter a few details such as your origin station, destination station, and the date of travel. The platform will then instantly display the list of available trains traveling through your route on your preferred travel date. Since dptrack is an IRCTC-authorized ticket booking platform, you can book tickets with confidence without worrying about authenticity. So, whether you are planning a business trip or going on vacation, opt for dptrack and make your train ticket booking process smooth and hassle-free</p>
+<hr>
+    <h2 style="font-family: Copperplate Gothic;">WHY BOOK US:</h2>
+    <ul >
+        <li> IRCTC AUTHORISED</li>
+        <li> ISTANT REFUND</li>
+        <li> HASSLE FREE</li>
+        <li> FASTEST CONFIRMED BOOKING EXPERIENCE</li>
+    </ul>
+    <hr>
+    <h2 style="font-family: Copperplate Gothic;" > TRAIN TICKET BOOKING CONCESSIONS:</h2>
+    <ol>
+        <li> Children under the age of 5(100% concession)</li>
+        <li> Children  aged between  5 and 12 years(50% concession)</li>
+        <li> students(100% concession)</li>
+        <li> passengers with disabilities(25%  and 75% concession)</li>
+    </ol>
+    <a href="#up" > <img  id="up1" src="up.png" width="80"></a>
+    <br>
+    <br>
+    <footer>
+        <img src="facebook.png" height="14" >
+        <img src="instagram.png" height="14" style="display: inline;">
+        <img src="twitter.png" height="14" style="display: inline;">
+        <p>S.divya pravin &copy; 2023</p></footer>  
+</body>
+</html

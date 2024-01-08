@@ -1,0 +1,99 @@
+.nav{
+    background-color: rgb(165, 31, 31);
+    padding: 20px;
+}
+h1{
+    display: inline;
+}
+#login
+{   padding: 0;
+    background-image: url("bk.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center top;
+    height: 85vh;
+}
+#log
+{ 
+    color: white;
+    border: 2px solid black;
+    margin-left: 200px;
+    margin-right: 200px;
+    padding: 20px;
+}
+footer{
+    text-align: center;
+    padding: 10px;
+    background-color:black;
+    color:white;
+    margin-top: auto;
+}
+#ll
+{
+    float: right;
+}
+#help
+{
+    background-color:rgb(46, 43, 43) ;
+    padding: 15px;
+}
+#button
+{ box-shadow: 0cqmin;
+    width: 300px;
+    background-color: red;
+    color: wheat;
+}
+#i1
+{
+    border: 0cm;
+}
+#ii
+{
+    background-color: black;
+}
+#tt,td
+{
+  padding-top: 10px;  
+  padding-bottom: 20px;
+  padding-left: 30px;
+  padding-right: 40px;
+} 
+
+#tt1
+{
+    display: inline;
+    border-radius: 0cqb;
+}
+#tt2
+{
+    display: inline;
+    float: right;
+}
+#up1
+{
+    display: inline;
+    float: right;
+}
+#book
+{   color: black;
+    border: 2px solid black;
+    margin-left: 350px;
+    margin-right: 350px;
+    padding: 20px;
+}
+button 
+{
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+}
+input[type="text"], input[type="date"] {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>online train ticket booking|signup</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body style="font-family: Copperplate Gothic;">
+    <div class="nav" style="background-color: rgb(165, 31, 31); padding: 20px;">
+       <a href="home.html" ><img src="logo..png" alt="logo" style="display: inline;" height="27px;"></a>
+        <h1 style="color: blue;">DPtracks</h1> 
+    </div>    
+    <div id="signup" style="padding: 0;background-image: url(bk.png);background-size: cover;background-repeat: no-repeated; background-position: center top;height: 85vh;"> 
+        <center><h1 style="color: blue;">CREATE AN ACCOUNT</h1></center><br><br>
+        <div id="reg" style="color: white; border: 2px solid black; margin-left: 200px; margin-right: 200px; padding: 20px;">
+            <form id="registrationForm">
+                <center><h1>SIGN UP</h1></center>
+                <label for="newUsername">NAME:</label>&nbsp;    
+                <input type="text" id="newUsername" size="30"  placeholder="Username" ><br><br><br>
+                <label for="newEmail">E MAIL:</label>&NonBreakingSpace;
+                <input type="email" id="newEmail" size="30"  placeholder="e mail" ><br><br><br>
+                <label for="phone">GENDER:</label>&nbsp;<br>
+                <input type="radio" id="GENDER" name="GENDER" value="male"/>Male<br><br>
+                <input type="radio" id="GENDER" name="GENDER" value="female"/>female<br><br>
+                <label for="phone">date of birth:</label>&nbsp;
+                <input type="date" ><br><br><br>
+                <label for="phone">PHONE:</label>&nbsp;
+                <label for="newPhone">PHONE:</label>&nbsp;
+                <input type="tel" id="newPhone" placeholder="+91" ><br><br><br>
+                <center><button style="color: blue;" id="registerButton">Register</button></center><br><br>
+            </form>
+            <center><a href="home.html" style="background-color: blue; color: white; ">Login</a></center>
+        <br>
+        </div><br><br>
+        
+        <br>
+    </div>
+    
+    <footer style="text-align: center; padding: 10px;background-color:black; color:white; margin-top: auto;">
+    <img src="facebook.png" height="14" >
+    <img src="instagram.png" height="14" style="display: inline;">
+    <img src="twitter.png" height="14" style="display: inline;">
+    <p>S.divya pravin &copy; 2023</p></footer>  
+
+    <script>
+        const newUser = {
+            username: "",
+            email: "",
+            phone: "",
+
+            setNewUserDetails(username, email, phone) {
+                this.username = username;
+                this.email = email;
+                this.phone = phone;
+            },
+
+            register() {
+                alert(`Registration successful for ${this.username}!` );
+                window.location.href("home.html")
+                
+            }
+        };
+
+        document.getElementById("registerButton").addEventListener("click", function() {
+            const newUsername = document.getElementById("newUsername").value;
+            const newEmail = document.getElementById("newEmail").value;
+            const newPhone = document.getElementById("newPhone").value;
+
+            newUser.setNewUserDetails(newUsername, newEmail, newPhone);
+            newUser.register();
+        });
+    </script>
+    
+</body>
+</html>
